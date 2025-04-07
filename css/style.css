@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --darkgryn:#1f2122;
+    --lightgryn:#27292a;
+    --rosecolor:#e75e8d;
+    --colorHeader:#666666;
+    --fontBold: "Boldonse", system-ui;
+    --fontsmoll: "Raleway", sans-serif;
+}
+.maincontainer{
+    width: 100vw;
+    background: var(--darkgryn);
+}
+.maincontainer .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+.maincontainer .header .logo{
+    width: 15vw;
+}
+.maincontainer .header .hline{
+    width: 1px;
+    height: 60px;
+    background:var(--colorHeader);
+}
+.maincontainer .header .search{
+    width: 15vw;
+    background: var(--lightgryn);
+    color:var(--colorHeader);
+    padding:10px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.maincontainer .header .search i{
+   color:var(--colorHeader);
+   margin-left: 80px;
+}
+.maincontainer .header .search input{
+    background:transparent;
+    border: none;
+    outline: none;
+    color: #a09898;
+    margin-left: 10px;
+}
+.maincontainer .header .menu ul{
+   width: 30vw;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+  
+}
+.maincontainer .header .menu ul li{
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.maincontainer .header .menu ul .active a,
+.maincontainer .header .menu ul li a:hover{
+    color: var(--rosecolor);
+}
+.maincontainer .header .menu ul .profille{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--lightgryn);
+    padding: 5px 20px;
+     border-radius: 30px;
+     -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+     -ms-border-radius: 30px;
+     -o-border-radius: 30px;
+}
+.maincontainer .header .menu ul .profille:hover
+/* ,.maincontainer .content .popular button:hover,
+.maincontainer .content .banner button:hover,
+.maincontainer .content .library button:hover */{
+     background: violet;
+}
+.maincontainer .header .menu ul .profille:hover a{
+    color:#fff;
+}
+.maincontainer .header .menu ul .profille img{
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.maincontainer .header .menu ul li a{
+    text-decoration: none;
+    color:var(--colorHeader);
+    text-transform: capitalize;
+    font-family: var(--fontsmoll);
+}
+.maincontainer .header .menu input{
+    display: none;
+}
+.maincontainer .header .menu label i{
+    color: var(--rosecolor);
+    font-size: 40px;
+    display: none; 
+}
+.maincontainer .content{
+    width: 100vw;
+    background: var(--lightgryn);
+    padding: 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.maincontainer .content .banner{
+    background: url('../imgs/banner-bg.jpg')no-repeat;
+    background-size:100% 100%;
+    border-radius: 30px;
+    padding:100px 40px;
+}
+.maincontainer .content .banner img{
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.maincontainer .content .banner h3{
+    color: aliceblue;
+    margin: 10px;
+    font-family: var(--fontsmoll);
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.maincontainer .content .banner h1{
+    color: aliceblue;
+    margin: 10px;
+    font-family: var(--fontBold);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.maincontainer .content .banner span{
+    color: var(--rosecolor);
+}
+.maincontainer .content .banner button,
+.maincontainer .content .popular button,
+.maincontainer .content .library button{
+   background: var(--rosecolor);
+   padding: 10px 20px;
+   border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -ms-border-radius: 20px;
+   -o-border-radius: 20px;
+   border: none;
+   font-size: 16px;
+   margin: 10px;
+   text-transform: capitalize;
+   transition: 1s;
+   -webkit-transition: 1s;
+   -moz-transition: 1s;
+   -ms-transition: 1s;
+   -o-transition: 1s;
+}
+.maincontainer .content .banner button a,
+.maincontainer .content .popular button a,
+.maincontainer .content .library button a{
+   text-decoration: none;
+   color: #fff;
+}
+.maincontainer .content .banner button:hover,
+.maincontainer .content .popular button:hover,
+.maincontainer .content .library button:hover{
+ background: #fff;
+}
+.maincontainer .content .banner button a:hover,
+.maincontainer .content .popular button a:hover,
+.maincontainer .content .library button a:hover{
+    color: var(--rosecolor); 
+}
+.maincontainer .content .popular,
+.maincontainer .content .library{
+    width: 100%;
+    background: var(--darkgryn);
+    padding: 50px;
+    margin: 30px auto;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px; 
+}
+.maincontainer .content .popular h2,
+.maincontainer .content .library h2{
+    color: var(--rosecolor);
+    text-transform: capitalize;
+    font-family: var(--fontBold);
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.maincontainer .content .popular span,
+.maincontainer .content .library span{
+    color: #fff;
+    text-decoration: underline;
+}
+.maincontainer .content .popular .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.maincontainer .content .popular .cards .card{
+    width: 20%;
+    margin: 30px;
+    background: var(--lightgryn);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 1s;
+}
+.maincontainer .content .popular .cards .card img{
+    width: 100%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.maincontainer .content .popular .cards .card img:hover{
+    transform: rotate(2deg);
+}
+.maincontainer .content .popular .cards .card .details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+}
+.maincontainer .content .popular .cards .card .left{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.maincontainer .content .popular .cards .card .left h3,
+.maincontainer .content .library .games .game h3{
+    color: #fff;
+    font-family: var(--fontsmoll);
+    margin-bottom: 20px;
+}
+.maincontainer .content .popular .cards .card .left p,
+.maincontainer .content .library .games .game p{
+   color:#827d7d;
+   font-family: var(--fontsmoll); 
+   font-size: 14px;
+}
+.maincontainer .content .popular .cards .card .right{
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.maincontainer .content .popular .cards .card i{
+    font-size: 20px;
+}
+.maincontainer .content .popular .cards .card .right i:first-child{
+    color: #ffff00;
+    margin-bottom: 20px;
+   
+}
+.maincontainer .content .popular .cards .card .right i:last-child{
+    color:var(--rosecolor);
+     
+}
+.maincontainer .content .popular button,
+.maincontainer .content .library .cbl{
+   margin-left: 43%;
+}
+.maincontainer .content .library .games .game{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.maincontainer .content .library .games .game img{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    /* transform:rotate(30);
+    -webkit-transform:rotate(30);
+    -moz-transform:rotate(30);
+    -ms-transform:rotate(30);
+    -o-transform:rotate(30); */
+}
+.maincontainer .content .library .games .game button{
+    background:transparent;
+    padding: 5px 30px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid #666666;
+    font-size: 14px;
+}
+.maincontainer .content .library .games .game button a{
+    color:#666666;
+}
+.maincontainer .content .library .games .game .butGame{
+    border: 1px solid var(--rosecolor);
+}
+.maincontainer .content .library .games .game .butGame a{
+    color: var(--rosecolor);
+}
+
+hr{
+    border: 1px solid  #383636;
+    margin: 30px 0;
+}
+.maincontainer .footer{
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: var(--fontsmoll);
+    font-size: 20px;
+}
+.maincontainer .footer span:hover{
+    color: var(--rosecolor);
+}
+/* start media */
+@media(max-width:1079px){
+    .maincontainer .header{
+        flex-wrap: wrap;
+    }
+    .maincontainer .header .logo{
+        width: 30vw;
+    }
+    .maincontainer .header .search{
+        width: 60vw;
+        order: 4;
+        width: 90vw;
+        margin: auto;
+    }
+    .maincontainer .header .hline{
+        display: none;
+    }
+    .maincontainer .header .menu ul{
+       background: #4543434f;
+       flex-direction: column;
+       gap: 10px;
+       align-items:flex-start;
+       padding: 2vh 5%;
+       border-radius:30px ;
+       transition:1s ;
+       /* transform-origin: top;
+       -webkit-transform:rotateX('90dag');
+       -moz-transform: rotate();
+       -ms-transform: rotate();
+       -o-transform: rotate();
+       transform: rotate();
+       -webkit-transition:1s ;
+       -moz-transition:1s ;
+       -ms-transition:1s ;
+       -o-transition:1s ;
+       -webkit-border-radius:30px ;
+       -moz-border-radius:30px ;
+       -ms-border-radius:30px ;
+       -o-border-radius:30px ; */
+       display: none;
+}
+.maincontainer .header .menu ul li{
+    border-bottom: 1px solid #a0989826;
+    width: 90%;
+}
+    .maincontainer .header .menu label i{
+        display: block;
+        cursor: pointer;
+        float: right;
+        /* margin-top: 30px; */
+    }
+    .maincontainer .header .menu #check:checked ~ ul{
+        /* transform:rotateX('0dag');
+        -webkit-transform:rotateX('0dag');
+        -moz-transform:rotateX('0dag');
+        -ms-transform:rotateX('0dag');
+        -o-transform:rotateX('0dag'); */
+        display: block;
+}
+}
+@media(max-width:900px){
+    .maincontainer .content .popular .cards .card{
+        width: 38%;
+    }
+}
+@media(max-width:779px){
+    .maincontainer .content .popular .cards .card{
+        width: 100%;
+    }
+    .maincontainer .content .popular,
+.maincontainer .content .library{
+text-align: center;
+}
+}
+@media(max-width:790px){
+    .maincontainer .content .library .games .game{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    .maincontainer .content .library .games .game img{
+         margin: auto;
+    }
+    .maincontainer .content .popular button,
+.maincontainer .content .library .cbl{
+    margin: auto;
+}
+}
+@media(max-width:650px){
+    .maincontainer .header{
+        flex-wrap: wrap;
+    }
+    .maincontainer .header .logo{
+        width: 30vw;
+    }
+    .maincontainer .header .search{
+        width: 80vw;
+    }
+    .maincontainer .content .library .games .game{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+}
+@media(max-width:550px){
+    .maincontainer .content .library .games .game{
+        display: grid;
+        grid-template-columns:auto;
+        padding: 10px;
+    }
+    .maincontainer .content .banner h1{
+        font-size: 16px;
+    }
+.maincontainer .content .popular h2,
+.maincontainer .content .library h2{
+    font-size: 12px;
+}
+}
+@media(max-width:475px){
+    .maincontainer .content .banner h1{
+        font-size: 12px;
+    }
+}
+@media(max-width:661px){
+    .maincontainer .footer {
+        font-size: 16px;
+    }
+}
+@media(max-width:540px){
+    .maincontainer .footer {
+        font-size: 14px;
+    }
+}
+
